@@ -1,5 +1,5 @@
 # YouTube Downloader
-Python Console Based Youtube Downloader with DASH stream download support with Post Video Processing. 
+Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. 
 
 Download Through Git:
 ```
@@ -27,6 +27,10 @@ python3 -m pip install python-ffmpeg
 ```
 
 FFMPEG executable is also reqired to run [ Place executable in same folder as the script ].
-FFMPEG used for this script is also been uploaded
+FFMPEG used for this script is also been uploaded.
+
+
+Documentation:
 
 [FFMPEG Documentation](https://ffmpeg.org/ffmpeg.html)
+[PyTube](https://github.com/pytube/pytube)

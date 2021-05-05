@@ -1,8 +1,10 @@
 <img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'></img>
 
 # YouTube Downloader
-Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. </br>
-
+Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. 
+</br>
+</br>
+</br>
 Download Through Git:
 ```
 git clone https://github.com/ViKi-R/youtube-downloader.git

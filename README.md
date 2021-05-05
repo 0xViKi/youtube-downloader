@@ -1,8 +1,8 @@
-<img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'></img>
+<span><img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'></img></span>
 
 # YouTube Downloader
 Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. 
-<div align='left' display='block'>
+
 Download Through Git:
 ```
 git clone https://github.com/ViKi-R/youtube-downloader.git
@@ -36,4 +36,3 @@ Documentation:
 
 [FFMPEG Documentation](https://ffmpeg.org/ffmpeg.html)
 [PyTube](https://github.com/pytube/pytube)
-</div>

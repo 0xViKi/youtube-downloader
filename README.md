@@ -1,7 +1,7 @@
-<span><img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'></img></span>
+<img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'></img>
 
 # YouTube Downloader
-Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. 
+Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. </br>
 
 Download Through Git:
 ```
@@ -9,7 +9,7 @@ git clone https://github.com/ViKi-R/youtube-downloader.git
 ```
 
 To run:
-``` 
+```python
 python3 youtube_downloader.py 
 ```
 
@@ -20,7 +20,7 @@ Requirments:
 
 To install Requirments:
 
-```
+```python
 PyTube:
 python3 -m pip install pytube
 

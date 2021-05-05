@@ -9,7 +9,6 @@ Python Console Based Youtube Downloader with DASH stream download support and Po
 </br>
 </br>
 </br>
-</br>
 Download Through Git:
 ```
 git clone https://github.com/ViKi-R/youtube-downloader.git

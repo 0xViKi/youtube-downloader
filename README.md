@@ -26,12 +26,12 @@ Requirments:
 
 To install Requirments:
 
-```python
+```
 PyTube:
-python3 -m pip install pytube
+<span style='colour:green'>python3</span> -m pip install pytube
 
 FFMPEG:
-python3 -m pip install python-ffmpeg
+<span style='colour:green'>python3</span> -m pip install python-ffmpeg
 ```
 
 FFMPEG executable is also reqired to run.

@@ -14,7 +14,7 @@ python3 youtube_downloader.py
 Requirments:
 
 1) Pytube
-2) FFMPEG
+2) Python-FFMPEG
 
 To install Requirments:
 
@@ -26,9 +26,9 @@ FFMPEG:
 python3 -m pip install python-ffmpeg
 ```
 
-FFMPEG executable is also reqired to run [ Place executable in same folder as the script ].
+FFMPEG executable is also reqired to run.
 FFMPEG used for this script is also been uploaded.
-
+[FFMPEG EXECUTABLE](https://ffmpeg.org/download.html)
 
 Documentation:
 

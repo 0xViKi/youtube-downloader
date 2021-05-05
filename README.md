@@ -1,4 +1,4 @@
-![youtube.ico](https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico)
+<img align='left' src='https://github.com/ViKi-R/youtube-downloader/blob/main/youtube.ico'> YT DOWNLOADER </img>
 
 # YouTube Downloader
 Python Console Based Youtube Downloader with DASH stream download support and Post Audio and Video Processing. 

@@ -34,9 +34,9 @@ FFMPEG:
 python3 -m pip install python-ffmpeg
 ```
 
-FFMPEG executable is also reqired to run.
-FFMPEG used for this script is also been uploaded.
-[FFMPEG EXECUTABLE](https://ffmpeg.org/download.html)
+[FFMPEG EXECUTABLE](https://ffmpeg.org/download.html) is also reqired to run. </br>Place FFMPEG executable in same folder as python script.
+
+
 
 Documentation:
 

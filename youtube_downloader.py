@@ -169,7 +169,7 @@ def choose_video_quality(yt):
     print('Enter the ID to download preferred Video Quality:')
     while True:
         yt_itag = int(input('ID >> '))
-        if yt_itag <= len(yt_itag_list):
+        if (yt_itag > 0 and yt_itag <= len(yt_itag_list)):
             break
         else:
             print('Please Enter Valid ITAG ID...')

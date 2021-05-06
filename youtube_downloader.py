@@ -52,8 +52,7 @@ def choose_audio_video():
             break
         else:
             print('Please Enter Valid Option...')
-            continue
-    print("-"*80)            
+            continue        
     return option  
 
 
@@ -67,6 +66,7 @@ def download_audio(yt, youtube_title):
     aitag = audio[16:19]
     ad = yt.streams.get_by_itag(aitag)
     audio_name = re.sub(r'[^a-zA-Z0-9 ]', '', youtube_title)
+    print("-"*80)
     print(f'Now Downloading Audio : {youtube_title} ...')
     ad.download(audio_save_path, filename=audio_name)
     print()
@@ -79,7 +79,6 @@ def convert_audio(aname):
     aname = re.sub(r'[^a-zA-Z0-9 ]', '', aname)
     audio_file = f"{desktop}\\YTMusic\\music\\{aname}.mp4"
     final_audio_file = f"{desktop}\\YTMusic\\{aname}.mp3"
-    print('-'*80)
     print("Please Wait...")
     subprocess.call(['ffmpeg', '-i', audio_file, final_audio_file, '-loglevel', 'fatal'])
     print('Done!')
@@ -88,7 +87,7 @@ def convert_audio(aname):
 
 
 def replace_format(video_quality):
-    # This Function corrects the format of the youtube video
+    # This Function corrects the format of the string
 
     video_quality = video_quality.replace('720p', ' 720p')
     video_quality = video_quality.replace('480p', ' 480p')
@@ -157,22 +156,25 @@ def choose_video_quality(yt):
     else:
         video_quality_list = remove_av01codec(video_quality_list)
 
+    print("-"*80)
     print("Available Video quality:")
-    print(f'\nITAG-ID   QUALITY')
-    print("-"*20)
-    for i in video_quality_list:
+    print("-"*15)
+    print(f'| ID | QUALITY |')
+    print("-"*15)
+    for idx, i in enumerate(video_quality_list):
         yt_itag_list.append(i[12:15])
-        print(f'{i[12:15]}\t  {i[38:43]}')
-    print("-"*20)
-    print('Enter the ITAG ID to download preferred Video Quality:')
+        print(f'| {idx+1} ->> {i[38:43]} |')
+        print(f'-'*15)
+
+    print('Enter the ID to download preferred Video Quality:')
     while True:
-        yt_itag = input('ITAG ID >> ')
-        if yt_itag in yt_itag_list:
+        yt_itag = int(input('ID >> '))
+        if yt_itag <= len(yt_itag_list):
             break
         else:
             print('Please Enter Valid ITAG ID...')
-            continue        
-    return yt_itag
+            continue
+    return yt_itag_list[yt_itag-1]
 
 
 def download_audio_for_video(yt, youtube_title):
@@ -232,15 +234,13 @@ def download_again():
     os.system('cls')
     print("-"*80)
     print('Do You want to Download Another Video/Audio Again [Y / n]:')
-    download_again = str(input('>> '))
+    download_again = str(input('-->> '))
     if download_again.lower() == 'y':
         main()
-    else:
-        print()
+    elif download_again.lower() == 'n':
         print('Thanks For using Come back again... ')
         print("-"*80)
         input("Press any key to exit... ")
-        os.system('cls')
 
 
 def main():
@@ -258,7 +258,6 @@ def main():
     if opted.lower() == "a":
         download_audio(yt, yt.title)
         convert_audio(yt.title)
-        print()
         print('>> Download Completed... ')
         print("-"*80)
         print(f'Audio Path: {desktop}\\YTMusic\\{title_name}')
@@ -268,7 +267,6 @@ def main():
     elif opted.lower() == "v":
         yt_itag = choose_video_quality(yt)
         download_video(yt, yt_itag)
-        print()
         print('>> Download Completed... ')
         print("-"*80)
         print(f'Video Path: {desktop}\\YTVideo\\{title_name}')

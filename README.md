@@ -34,7 +34,8 @@ FFMPEG:
 python3 -m pip install python-ffmpeg
 ```
 
-[FFMPEG EXECUTABLE](https://ffmpeg.org/download.html) is also reqired to run. </br>Place FFMPEG executable in same folder as python script.</br>
-Documentation:
+[FFMPEG EXECUTABLE](https://ffmpeg.org/download.html) is also reqired to run. </br>Place FFMPEG executable in same folder as python script.
+
+Documentation:</br>
 [FFMPEG Documentation](https://ffmpeg.org/ffmpeg.html)</br>
 [PyTube : Github](https://github.com/pytube/pytube)
